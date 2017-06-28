@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="517.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NoteOcr">
+   <children>
+      <Button fx:id="ajouter" layoutX="255.0" layoutY="339.0" mnemonicParsing="false" onAction="#addmethod" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #757575;" text="Ajouter" textFill="WHITE" />
+      <TextField fx:id="nom" layoutX="229.0" layoutY="180.0" promptText="nom de la Tache" />
+      <TextField fx:id="url" layoutX="198.0" layoutY="259.0" prefHeight="25.0" prefWidth="205.0" promptText="url du fichier.wav" />
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="83.0" prefWidth="580.0" style="-fx-background-color: #757575;">
+         <children>
+            <ImageView fitHeight="83.0" fitWidth="322.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@SECURE_NOTES.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="walo" layoutX="180.0" layoutY="-4.0" prefHeight="83.0" prefWidth="339.0" style="-fx-text-fill: #ffffff; -fx-font-size: 40; -fx-alignment: center;" styleClass="fill" text="Ajouter une tâche">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
